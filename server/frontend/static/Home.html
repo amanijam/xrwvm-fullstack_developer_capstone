@@ -27,6 +27,8 @@ const logout = async (e) => {
 
 let checkSession = ()=>{
   let curr_user = sessionStorage.getItem("username");
+  console.log("CHECK SESSION");
+  console.log("curr_user: " + curr_user);
 
   if (curr_user && curr_user !== "") {
     document.getElementById("loginlogout").innerHTML = 
