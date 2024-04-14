@@ -124,3 +124,16 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+.contact-details p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.contact-details span {
+    display: block;
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
