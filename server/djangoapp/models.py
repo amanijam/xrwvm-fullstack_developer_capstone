@@ -39,7 +39,8 @@ class CarModel(models.Model):
     ]
     type = models.CharField(choices=CAR_TYPES, default="Sedan", max_length=100)
     year = models.IntegerField(
-        default=2015, validators=[MinValueValidator(2015), MaxValueValidator(2023)]
+        default=2015, validators=[
+            MinValueValidator(2015), MaxValueValidator(2023)]
     )
     ENGINE_TYPE = [
         ("Gasoline", "Gasoline"),
