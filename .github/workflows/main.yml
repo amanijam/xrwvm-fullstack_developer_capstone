@@ -49,6 +49,10 @@ jobs:
       - name: Install JSHint
         run: npm install jshint --global
 
+      - name: Configure JSHint
+        run: |
+          echo '{ "esversion": 8 }' > .jshintrc
+
       - name: Run Linter
         run: |
           # This command finds all JavaScript files recursively and runs JSHint on them
